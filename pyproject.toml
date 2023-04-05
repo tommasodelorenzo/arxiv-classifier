@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "embs-creation"
+version = "0.1.0"
+description = ""
+authors = ["Tommaso De Lorenzo <tommasodelorenzo@yahoo.it>"]
+readme = "README.md"
+packages = [{include = "embs_creation"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.5.2"
+sentence-transformers = "^2.2.2"
+transformers = "^4.27.4"
+numpy = "^1.24.2"
+unidecode = "^1.3.6"
+spacy = "^3.5.1"
+pathlib = "^1.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.22.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
